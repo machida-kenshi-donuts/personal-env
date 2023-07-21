@@ -1,0 +1,21 @@
+alias umamba=micromamba
+source $HOME/.cargo/env
+
+function docker-containers(){
+    docker ps --format "{{.Names}}"
+}
+
+alias de="docker exec -it \$(docker-containers | fzf-tmux)"
+alias da="docker attach \$(docker-containers | fzf-tmux)"
+alias dk="docker kill \$(docker-containers | fzf-tmux)"
+alias dl="docker logs \$(docker-containers | fzf-tmux)"
+
+# ruby
+export RUBYOPT=-EUTF-8
+case ":${PATH}:" in
+    *:"$HOME/.rbenv/shims":*)
+        ;;
+    *)
+        export PPATH="$HOME/.rbenv/shims:$PATH"
+        ;;
+esac

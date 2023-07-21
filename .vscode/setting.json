@@ -1,0 +1,121 @@
+{
+    "[markdown]": {
+        "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
+        "editor.tabSize": 2,
+    },
+    "[typescript]": {
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            // "source.fixAll.eslint": true,
+            "source.fixAll.tslint": true,
+            "source.fixAll": true
+        }
+    },
+    "[typescriptreact]": {
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            // "source.fixAll.eslint": true,
+            "source.fixAll.tslint": true,
+            "source.fixAll": true
+        }
+    },
+    "[javascript]": {
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": true,
+            // "source.fixAll.tslint": true,
+            "source.fixAll": true
+        }
+    },
+    "[javascriptreact]": {
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": true,
+            // "source.fixAll.tslint": true,
+            "source.fixAll": true
+        }
+    },
+    "[json]": {
+        "editor.defaultFormatter": "rome.rome",
+        "editor.formatOnSave": true,
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features",
+        "editor.formatOnSave": true,
+    },
+    "[ruby]": {
+        "editor.defaultFormatter": "Shopify.ruby-lsp",
+        "editor.formatOnSave": true,
+    },
+    "[rust]": {
+        "editor.formatOnSave": true,
+    },
+  
+    "ruby.useLanguageServer": true,
+    "ruby.useBundler": false,
+    // "ruby.format": "rubocop",
+    "ruby.lint": {
+        "rubocop": {
+            "useBundler": false
+        }
+    },
+    "rubyLsp.formatter": "syntax_tree",
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact",
+    ],
+  
+    "editor.inlineSuggest.enabled": true,
+    "workbench.startupEditor": "none",
+    "workbench.colorTheme": "Default Light Modern",
+    "workbench.iconTheme": "material-icon-theme",
+    "scm.alwaysShowRepositories": true,
+    "editor.fontFamily": "'HackGen Console NF', Menlo, Monaco, 'Courier New', monospace",
+    "editor.rulers": [
+        0,
+        80,
+        120,
+    ],
+    "diffEditor.ignoreTrimWhitespace": false,
+
+    "indentRainbow.ignoreErrorLanguages": [
+        "*"
+    ],
+    "hediet.vscode-drawio.resizeImages": null,
+    // Specifies the style of the gravatar default (fallback) images
+    //  - identicon: A geometric pattern
+    //  - mp: A simple, cartoon-style silhouetted outline of a person (does not vary by email hash)
+    //  - monsterid: A monster with different colors, faces, etc
+    //  - retro: 8-bit arcade-style pixelated faces
+    //  - robohash: A robot with different colors, faces, etc
+    //  - wavatar: A face with differing features and backgrounds
+    "gitlens.defaultGravatarsStyle": "retro",
+    "gitlens.currentLine.format": "${author, }${date}${' via 'pullRequest}${ • message|50?}",
+    "gitlens.views.commitDetails.files.layout": "tree",
+    "gitlens.views.formats.commits.description": "${author, }${date}",
+    "gitlens.defaultDateLocale": "en-US",
+    "gitlens.defaultDateFormat": "YYYY/MM/DD ddda hh:mm:ss",
+    "gitlens.defaultDateShortFormat": "YYYY/MM/DD ddd",
+    "gitlens.defaultTimeFormat": "a hh:mm:ss",
+    "gitlens.statusBar.format": "${author}, ${date}${' via 'pullRequest}",
+    "gitlens.views.formats.stashes.description": "${stashOnRef, }${date}",
+    "gitlens.blame.format": "${message|50?} ${date|14-}",
+    "gitlens.graph.dateFormat": null,
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": true,
+        "markdown": false,
+        "scminput": false
+    },
+    "gitlens.views.searchAndCompare.files.layout": "tree",
+    "gitlens.defaultDateStyle": "absolute",
+    "gitlens.views.commits.files.layout": "tree",
+    "gitlens.views.repositories.includeWorkingTree": true,
+    "gitlens.views.repositories.files.layout": "tree",
+    "gitlens.views.branches.files.layout": "tree",
+    "gitlens.views.remotes.files.layout": "tree",
+    "gitlens.graph.dateStyle": "absolute",
+    "gitlens.heatmap.ageThreshold": 30,
+}
